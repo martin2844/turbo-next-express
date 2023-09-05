@@ -1,0 +1,43 @@
+{
+  "extends": "../../packages/tsconfig/base.json",
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es2022",
+    "typeRoots": ["node_modules/@types", "types", "./../../node_modules/@types"],
+    "lib": ["es2022", "esnext.asynciterable", "dom"],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "pretty": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "allowJs": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@config": ["config"],
+      "@db": ["db"],
+      "@controllers": ["controllers/index"],
+      "@crons": ["crons"],
+      "@databases": ["databases"],
+      "@exceptions/*": ["exceptions/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@middleware/*": ["middleware/*"],
+      "@models/*": ["models/*"],
+      "@ctypes/*": ["types/*"],
+      "@routes/*": ["routes/*"],
+      "@schemas/*": ["schemas/*"],
+      "@services/*": ["services/*"],
+      "@templates/*": ["templates/*"],
+      "@utils/*": ["utils/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.json", ".env"],
+  "exclude": ["node_modules", "src/http", "src/logs", "src/tests"]
+}
