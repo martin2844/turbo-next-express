@@ -1,3 +1,4 @@
+"use client";
 import { Button, Header } from "ui";
 
 export default function Page(): JSX.Element {
@@ -5,6 +6,7 @@ export default function Page(): JSX.Element {
     <>
       <Header text="Web" />
       <Button />
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </>
   );
 }

@@ -9,6 +9,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true,
+    "allowImportingTsExtensions": false,
     "moduleResolution": "node",
     "module": "commonjs",
     "pretty": true,

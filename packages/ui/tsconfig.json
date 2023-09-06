@@ -1,5 +1,23 @@
 {
   "extends": "tsconfig/react-library.json",
+    "typesVersions": {
+    "*": {
+      "*": [
+        "src/*",
+        "src/*/index"
+      ]
+    }
+  },
+   "publishConfig": {
+    "typesVersions": {
+      "*": {
+        "*": [
+          "dist/*.d.ts",
+          "dist/*/index.d.ts"
+        ]
+      }
+    }
+  },
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }
